@@ -37,7 +37,7 @@ http.createServer(function(req, res){
     var child = spawn('/bin/sh', ['hook.sh']);
     child.stdout.setEncoding('utf8');
     child.stdout.on('data', function(data) {
-      console.log(data);
+      console.log('stdout', data);
       // var buff = new Buffer(data);
       // console.log(buff.toString('utf-8'));
     });
