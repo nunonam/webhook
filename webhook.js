@@ -34,10 +34,11 @@ http.createServer(function(req, res){
 
     console.log("running hook.sh");
 
-    var deploySh = spawn('sh', ['hook.sh']);
-    deploySh.stdout.on('data', function(data) {
-      var buff = new Buffer(data);
-      console.log(buff.toString('utf-8'));
+    var child = spawn('/bin/sh', ['hook.sh']);
+    child.stdout.on('data', function(data) {
+      console.log(data);
+      // var buff = new Buffer(data);
+      // console.log(buff.toString('utf-8'));
     });
 
 
