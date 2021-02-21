@@ -2,7 +2,7 @@
   "name": "nodejs-github-webhook",
   "version": "1.0.0",
   "description": "Github Webhook server built with Node.js",
-  "main": "index.js",
+  "main": "webhook.js",
   "dependencies": {},
   "devDependencies": {},
   "scripts": {
