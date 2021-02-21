@@ -35,6 +35,7 @@ http.createServer(function(req, res){
     console.log("running hook.sh");
 
     var child = spawn('/bin/sh', ['hook.sh']);
+    child.stdout.setEncoding('utf8');
     child.stdout.on('data', function(data) {
       console.log(data);
       // var buff = new Buffer(data);
