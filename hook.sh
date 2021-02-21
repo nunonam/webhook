@@ -1,8 +1,9 @@
 #!/bin/bash
 
 # DIRECTORY TO THE REPOSITORY
-REPOSITORY="../backend"
+# REPOSITORY="../backend"
+#cd $REPOSITORY
 
-cd $REPOSITORY
+cd /home/ubuntu/backend
 
 git pull
